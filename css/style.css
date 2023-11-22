@@ -1,0 +1,814 @@
+/* общие стили */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1F232B;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+/***** ШАПКА И МЕНЮ *****/
+
+.logo-img{
+    display: block;
+    height: 84px;
+    margin-right: 10px;
+}
+
+.header{
+    display: flex;
+    margin-top: 30px;
+}
+
+.menu{
+    margin-left: auto;
+    margin-top: 29px;
+    align-items: center
+}
+
+.menu-items {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.menu-item a {
+    font-size: 18px;
+    color: #1F232B;
+    transition: all 0.2s;
+    
+}
+
+.menu-item a:hover {
+    color: #9EABB8;
+    display: inline-block;
+    transform: scale(1.10);
+}
+
+
+.menu-item a:active {
+  color: #00BEF0;
+}
+
+/* секция полис */
+
+.main {
+    opacity: 0;
+    animation: main 3s forwards;
+    display: flex;
+    align-items: center;
+    padding-top: 145px;
+    margin-bottom: 150px;
+  }
+
+  /* анимация проявление*/
+  @keyframes main{
+    0%{
+        opacity: 0; 
+    }
+  
+    
+    50%{
+        opacity: 0,5;
+    }
+  
+    100%{
+        opacity: 1;
+    }
+  
+  }
+
+  .button {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #00BEF0;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 43px;
+  }
+
+  /* при наведении */
+  .button:hover {
+    background: #535E6E;
+  }
+
+  /* при нажатии */
+  .button:active {
+    background: #fff;
+    color: #00BEF0;
+    border: 1px solid #00BEF0;
+  }
+  
+  .gray:active {
+    background: #F0F2F3;
+    color: #00BEF0;
+    border: 1px solid #00BEF0;
+  }
+
+  .main-block p {
+    color: #535E6E;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 100px;
+  }
+
+  .title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 35px;
+  }
+  
+  .main-picture {
+    width: 577px;
+    height: 392px;
+  }
+
+
+  .card {
+    background-color: #c9d0d649;
+    padding-top: 110px;
+    padding-bottom: 88px;
+  }
+
+  .subtitle{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  /* секция объекты */
+  
+  .card-title {
+    text-align: center;
+    color: #535E6E;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 110px;
+  }
+  
+  .card__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 354px);
+    gap: 36px;
+    margin-bottom: 72px;
+  }
+
+
+  
+  .card__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 60px;
+    background-color: #fff;
+    box-shadow: 10px 40px 50px 0px rgba(0, 0, 0, 0.137);
+    border-radius: 20px;
+    transition: all 0.5s;
+  }
+
+  .card__item:hover {
+    transform: scale(1.07); /* масштабирование */
+  }
+
+  
+
+  .card__item img{
+    width: 100px;
+    height: 120px;
+  }
+
+  .card__item span {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .card__item p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+  
+  .card-button {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  /* секция преимущества */
+  .advantages-block {
+    display: flex;
+    align-items: center; 
+    height: 520px;
+    margin-top: 70px;
+    gap: 50px;
+  }
+
+  /* использование */
+
+.use{
+    background-color: #c9d0d649;
+    padding-bottom: 80px; 
+}
+
+  .use-block {
+    display: flex;
+    align-items: center; 
+    height: 520px;
+    margin-top: 70px;
+    gap: 50px;
+  }
+
+
+
+  /* форма */
+
+  
+  .container-form {
+    max-width: 800px;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 3px #00c0f017;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.form {
+  animation: form 5s ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@keyframes form {
+  0% {
+      transform: translateY(100%) scaleX(0.6);
+  }
+
+  100% {
+    transform: translateY(0%) scaleX(1);
+  }
+
+}
+
+
+.form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 35px;
+    width: calc(100% / 2 - 20px);
+}
+
+.form input {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #1F232B;
+    transition: all 0.5s; /* плавность */
+    outline: none;
+}
+
+.form input:hover {
+  border: 1px solid #00BEF0;
+}
+
+/* поле при нажатии */
+
+.form input:focus {
+    border: 1px solid #00BEF0;
+    box-shadow: 0 0 3px 3px #9EABB8;
+}
+
+
+.custom-radio>input {
+    display: none;
+}
+
+.custom-radio>span::before {
+    content: "";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-radio>input:hover+span::before {
+  border: 3px solid #00BEF0;
+}
+
+.custom-radio>input:checked+span::before {
+    background-color: #00BEF0;
+}
+
+.button-form{
+	width: 30%;
+	text-align: center;
+	margin-top: 80px;
+}
+
+
+.submit{
+	background-color: #00BEF0;
+	border-radius: 30px;
+	padding: 15px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: 700;
+	border: none;
+  text-align: center;
+}
+
+
+.submit:hover {
+  background: #535E6E;
+}
+
+.submit:active {
+  background: #fff;
+  color: #00BEF0;
+  border: 1px solid #00BEF0;
+}
+
+
+/***** ФУТЕР *****/
+
+footer {
+    background-color: #343944;
+    color: #fff;
+}
+  
+  .footer {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 20px;
+  }
+  
+  .footer-block {
+    margin-right: 150px;
+  }
+  
+  .footer-in {
+    width: 500px;
+    margin-top: 10px;
+  }
+
+  .footer-logo {
+    font-size: 29px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .footer p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+
+  .footer span {
+    width: 300px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  
+  .footer-menu-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 100;
+    transition: all 0.2s;
+  }
+
+  .footer-menu-item a:hover{
+    color: #00BEF0;
+    display: inline-block;
+    transform: scale(1.10);
+  }
+
+  .footer-menu-item a:active{
+    color: #9EABB8;
+  }
+
+  .footer-title {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .footer-img {
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+
+
+/****** АДАПТАЦИЯ ******/
+
+
+  @media (min-width: 380px) and (max-width: 809px){
+
+  .logo-img{
+    height: 64px;
+  }
+  
+  .header{   
+    flex-direction: column;
+  }
+  
+  .menu-items {
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .menu-item a {
+    font-size: 18px; 
+    font-weight: 500; 
+  }
+
+
+  .main {
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .button {
+    text-transform:none;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+  }
+
+  .main-block p {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 45px;
+  }
+
+  .title{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .main-picture {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 210px;
+  }
+
+  .card-title {
+    margin-bottom: 70px;
+  }
+
+  .card__item {
+    padding: 50px 40px;
+  }
+
+  .card__item span {
+    font-size: 21px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+  
+  .card-button {
+    margin-bottom: -80px;
+  }
+
+  .card__items {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    gap: 20px;
+  }
+
+  .card__item img{
+    display: none;
+  }
+
+  .advantages-block {
+    flex-direction: column;
+    height: 470px;
+    margin-top: 20px;
+  }
+
+  .advantages-button{
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-e img{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 210px;
+  }
+
+  .use{
+    background-color: #c9d0d649;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .use-block {
+    height: 520px;
+    flex-direction: column;
+  }
+
+  .use-button{
+    display: flex;
+    justify-content: center;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    margin-top: -25px;
+  }
+      
+  .form {
+    flex-direction: column;
+  }
+
+  .form input {
+    font-size: 16px;
+    padding: 5px;
+}
+      
+  .form-group {
+    width: 100%;
+  }
+
+  .submit{
+    padding: 15px 20px;
+  }
+      
+  .button-form {
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  footer {
+    height: auto;
+}
+  
+  .footer {
+    flex-wrap: wrap;
+    padding-top: 70px;
+  }
+  
+  .footer-in {
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-size: 22px;
+  }
+  
+  .footer p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .footer span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .footer-title {
+    font-size: 19px;
+  }
+
+  .footer-img {
+    margin-bottom: 25px;
+  }
+
+  } 
+
+  
+  @media (min-width: 810px) and (max-width: 1200px){
+
+    .logo-img{
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .header{   
+      flex-direction: column;
+    }
+    
+    .menu-items {
+      gap: 15px;
+    }
+  
+    .main {
+      padding-top: 70px;
+      margin-bottom: 100px;
+    }
+  
+    .button {
+      text-transform:none;
+      padding: 15px 20px;
+      margin-bottom: 40px;
+    }
+  
+    .main-block p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 50px;
+    }
+  
+    .title{
+      font-size: 24px;
+      line-height: 32px;
+    }
+    
+    .main-picture {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: 210px;
+      padding-left: 20px;
+    }
+
+    .card {
+      padding-bottom: 20px;
+    }
+  
+    .card__item {
+      padding: 40px 40px;
+    }
+  
+    .card__item span {
+      font-size: 21px;
+      margin-top: -20px;
+    }
+  
+    .card__items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      gap: 20px;
+    } 
+  
+    .card__item img{
+      display: none;
+    }
+  
+    .advantages-block {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .advantages-button{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  
+    .logo-e img{
+      display: block;
+      margin: 0 auto;
+      width: 320px;
+      height: 224px;
+    }
+  
+    .use{
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+  
+    .use-block {
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .use-button{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  
+    .subtitle {
+      font-size: 32px;
+      margin-top: -25px;
+    }
+        
+    .form {
+      flex-direction: column;
+    }
+  
+    .form input {
+      padding: 15px;
+    } 
+        
+    .form-group {
+      width: 100%;
+    }
+        
+    .button-form {
+      width: 100%;
+      margin-top: 5px;
+    }
+    
+    footer {
+      height: auto;
+      padding-bottom: 50px;
+    }
+    
+    .footer {
+      padding-top: 70px;
+      flex-wrap: wrap;
+    }
+    
+    .footer-in {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 40px;
+    }
+
+    .icon{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .footer-logo {
+      font-size: 22px;
+    }
+    
+    .footer p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  
+    .footer span {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  
+    .footer-title {
+      margin-right: 20px;
+      font-size: 19px;
+    }
+  
+    .footer-img {
+      margin-left: 50px;
+      margin-top: 15px;
+    }
+  }
