@@ -145,7 +145,7 @@ section {
     margin-bottom: 35px;
   }
   
-  .main-picture {
+  .picture {
     width: 577px;
     height: 392px;
   }
@@ -451,12 +451,16 @@ footer {
   .footer-img {
     margin-right: 20px;
     margin-top: 30px;
+    width: 40px;
+    height: 40px;
   }
 
 
 
 /****** АДАПТАЦИЯ ******/
 
+
+/* под телефон */
 
   @media (min-width: 380px) and (max-width: 809px){
 
@@ -503,7 +507,7 @@ footer {
     line-height: 32px;
   }
   
-  .main-picture {
+  .picture {
     display: block;
     margin: 0 auto;
     width: 300px;
@@ -638,6 +642,7 @@ footer {
 
   } 
 
+  /* адаптация под планшет */
   
   @media (min-width: 810px) and (max-width: 1200px){
 
@@ -676,7 +681,7 @@ footer {
       line-height: 32px;
     }
     
-    .main-picture {
+    .picture {
       display: block;
       margin: 0 auto;
       width: 300px;
