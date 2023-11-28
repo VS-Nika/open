@@ -467,6 +467,7 @@ footer {
 
   .logo-img{
     height: 64px;
+    margin: 0 auto;
   }
   
   .header{   
@@ -641,15 +642,15 @@ footer {
   
   @media (min-width: 810px) and (max-width: 1200px){
 
+    .header{
+      justify-content: center;
+      align-items: center;
+    }
+
     .logo-img{
-      display: block;
-      margin: 0 auto;
+      margin-top: 30px;
     }
-    
-    .header{   
-      flex-direction: column;
-    }
-    
+
     .menu-items {
       gap: 15px;
     }
